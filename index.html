@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>خانه - مبل خندان</title>
+  <style>
+    /* Reset & basics */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #cfcfcf;
+      padding-top: 60px; /* space for fixed navbar */
+      direction: rtl;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    /* Navbar styles */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 60px;
+      background-color: #b8860b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    nav .brand {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    nav .nav-links a {
+      color: white;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav .nav-links a:hover,
+    nav .nav-links a.active {
+      background-color: #996f00;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 10px 60px;
+    }
+
+    /* Slider container */
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 12px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;  /* IE 10+ */
+      margin-bottom: 40px;
+    }
+    .slider::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+
+    /* Each image container */
+    .image-container {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      width: 22%;
+      height: 320px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .image-container:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .image-container {
+        width: 30%;
+        height: 280px;
+      }
+    }
+    @media (max-width: 768px) {
+      .image-container {
+        width: 45%;
+        height: 250px;
+      }
+    }
+    @media (max-width: 480px) {
+      .image-container {
+        width: 70%;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="brand">مبل خندان</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">خانه</a>
+      <a href="about.html">درباره</a>
+      <a href="contact.html">ارتباط</a>
+    </div>
+  </nav>
+
+  <!-- Main container -->
+  <div class="container">
+
+    <!-- Top Slider -->
+    <div class="slider" id="top-slider">
+      <a href="First.html" class="image-container" title="Product Showcase">
+        <img src="assets/one.jpg" alt="Product Showcase" />
+      </a>
+      <a href="Two.html" class="image-container" title="Our Services">
+        <img src="assets/two.jpg" alt="Our Services" />
+      </a>
+      <a href="Three.html" class="image-container" title="About Us">
+        <img src="assets/three.jpg" alt="About Us" />
+      </a>
+      <a href="Four.html" class="image-container" title="Contact">
+        <img src="assets/four.jpg" alt="Contact" />
+      </a>
+      <a href="Five.html" class="image-container" title="Blog">
+        <img src="assets/five.jpg" alt="Blog" />
+      </a>
+      <a href="Eleven.html" class="image-container" title="Blog">
+        <img src="assets/eleven.jpg" alt="Blog" />
+      </a>
+      <a href="Thirteen.html" class="image-container" title="Blog">
+        <img src="assets/thirteen.jpg" alt="Blog" />
+      </a>
+      <a href="Fifteen.html" class="image-container" title="Blog">
+        <img src="assets/fifteen.jpg" alt="Blog" />
+      </a>
+    </div>
+
+    <!-- Bottom Slider -->
+    <div class="slider" id="bottom-slider">
+      <a href="Six.html" class="image-container" title="Gallery">
+        <img src="assets/six.jpg" alt="Gallery" />
+      </a>
+      <a href="Seven.html" class="image-container" title="Our Team">
+        <img src="assets/seven.jpg" alt="Our Team" />
+      </a>
+      <a href="Eight.html" class="image-container" title="Portfolio">
+        <img src="assets/eight.jpg" alt="Portfolio" />
+      </a>
+      <a href="Nine.html" class="image-container" title="Testimonials">
+        <img src="assets/nine.jpg" alt="Testimonials" />
+      </a>
+      <a href="Ten.html" class="image-container" title="FAQs">
+        <img src="assets/ten.jpg" alt="FAQs" />
+      </a>
+      <a href="Twoelve.html" class="image-container" title="FAQs">
+        <img src="assets/twoelve.jpg" alt="FAQs" />
+      </a>
+      <a href="Fourteen.html" class="image-container" title="FAQs">
+        <img src="assets/fourteen.jpg" alt="FAQs" />
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

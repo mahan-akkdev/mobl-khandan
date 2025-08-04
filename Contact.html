@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ارتباط - مبل خندان</title>
+  <style>
+    /* Reset & basics */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #cfcfcf;
+      padding-top: 60px; /* space for fixed navbar */
+      direction: rtl;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    /* Navbar styles */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 60px;
+      background-color: #b8860b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    nav .brand {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    nav .nav-links a {
+      color: white;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav .nav-links a:hover,
+    nav .nav-links a.active {
+      background-color: #996f00;
+    }
+
+    /* Container and Paper-like styling */
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px 15px 60px;
+    }
+    .paper {
+      background: linear-gradient(to right, #ffd64d, #ffdf88);
+      border-left: 4px solid #b8860b;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 30px 20px;
+      color: #333;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      margin-bottom: 15px;
+      font-size: 1.05rem;
+    }
+    .contact-item svg {
+      fill: #b8860b;
+      flex-shrink: 0;
+    }
+    hr {
+      border: none;
+      border-top: 1.5px solid #b8860b;
+      margin: 15px 0;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .work-hours {
+      font-style: italic;
+      margin-top: 25px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="brand">مبل خندان</div>
+    <div class="nav-links">
+      <a href="index.html">خانه</a>
+      <a href="about.html">درباره</a>
+      <a href="contact.html" class="active">ارتباط</a>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="container" role="main">
+    <section class="paper" aria-label="اطلاعات تماس">
+      
+      <h2 style="margin-bottom: 20px; font-weight: bold;">تماس با ما</h2>
+      
+      <div class="contact-item" aria-label="شماره تلفن ثابت">
+        <!-- Phone SVG icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.091 15.091 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.74 3.83.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.92 2.08 13.93 2.08 4a1 1 0 011-1H6.58a1 1 0 011 1c0 1.33.26 2.63.74 3.83a1 1 0 01-.21 1.11l-2.49 2.49z"/></svg>
+        <span>تلفن: 02162819</span>
+      </div>
+
+      <div class="contact-item" aria-label="شماره موبایل">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.091 15.091 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.74 3.83.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.92 2.08 13.93 2.08 4a1 1 0 011-1H6.58a1 1 0 011 1c0 1.33.26 2.63.74 3.83a1 1 0 01-.21 1.11l-2.49 2.49z"/></svg>
+        <span>موبایل: 09307600680</span>
+      </div>
+
+      <hr />
+
+      <div class="contact-item" aria-label="آدرس">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+        <span>آدرس: تهران</span>
+      </div>
+
+      <div class="work-hours">
+        ساعات کاری: شنبه تا چهارشنبه، ۹ صبح تا ۶ بعدازظهر
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
